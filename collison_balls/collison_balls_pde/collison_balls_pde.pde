@@ -1,4 +1,4 @@
-int count = 10000;
+int count = 150;
 PVector[] loc = new PVector[count];
 PVector[] vel = new PVector[count];
 PVector[] acc = new PVector[count];
@@ -7,7 +7,7 @@ float[] sz = new float[count];
 void setup() {
   size(displayWidth, displayHeight);
   for (int i = 0; i < count; i++) {  
-    sz[i] = random(5, 15);  
+    sz[i] = random(50, 100);  
     loc[i] = new PVector(random(sz[i], width-sz[i]), random(sz[i], height-sz[i])); 
     vel[i] = PVector.random2D(); 
     acc[i] = new PVector(0, 0); 
@@ -15,7 +15,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(100,50,200);
 
   for (int i = 0; i < count; i++) { 
     //move the ball
