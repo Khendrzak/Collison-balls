@@ -14,7 +14,7 @@ void setup() {
     loc[i] = new PVector(random(sz[i], width-sz[i]), random(sz[i], height-sz[i])); 
     vel[i] = PVector.random2D(); 
     acc[i] = new PVector(0, 0); 
-    mass[i]=map(sz[i],minDiam,maxDiam, .5, 1.5);
+    mass[i]=map(sz[i],minDiam,maxDiam, .1, 1.5);
   }
 }
 
